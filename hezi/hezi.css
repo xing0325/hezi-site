@@ -1,0 +1,23 @@
+.hezi-wordmark{font-family:Arial,Helvetica,sans-serif;font-size:clamp(20px,2.7vw,42px);font-weight:900;letter-spacing:-.065em;line-height:1;text-transform:none;white-space:nowrap}.nav-brand-link{width:auto!important;max-width:none!important}.hezi-face-icon{width:100%;height:100%;object-fit:cover;object-position:50% 12%;border-radius:50%}.home-hero-next-race-row.is-2{cursor:pointer}.home-hero-next-race-row.is-2:focus-visible{outline:2px solid currentColor;outline-offset:4px}.hezi-mobile-title{font-family:Arial,sans-serif;font-size:clamp(48px,16vw,120px);font-weight:900;line-height:1}
+.nav-brand-link{color:var(--_colors---dark-green,#552583)}
+html:has(.nav-menu-w.is-active) .nav-brand-link{color:#fff9ed}
+[data-nav-theme="light"] .hezi-wordmark{color:#fff9ed}[data-nav-theme="dark"] .hezi-wordmark{color:#552583}
+@media(max-width:991px){.nav-brand-link{display:block!important}.hezi-wordmark{font-size:23px}.btn-layout.is-nav{width:auto;justify-content:flex-end}.nav-inner{gap:12px}}
+/* Hezi: Lakers purple and gold, custom vector wordmark. */
+.nav-brand-link{width:clamp(180px,18vw,280px)!important;line-height:0;color:var(--color--dark-green,#552583)}
+.hezi-wordmark{display:block;width:100%;height:auto;overflow:visible!important}
+[data-nav-theme="dark"] .hezi-wordmark{color:#552583}
+[data-nav-theme="light"] .hezi-wordmark{color:#fff9ed}
+.hezi-signature-animated{display:block;width:100%;height:100%;overflow:visible!important;color:#FDB927}
+.hezi-signature-animated path{stroke-dasharray:1;stroke-dashoffset:1}
+.hezi-signature-animated.is-drawn path{stroke-dashoffset:0;transition:stroke-dashoffset 1.5s cubic-bezier(.19,1,.22,1)}
+.hezi-signature-animated.is-drawn path:nth-child(2){transition-delay:.16s}
+.hezi-signature-animated.is-drawn path:nth-child(3){transition-delay:.3s}
+.hezi-signature-animated.is-drawn path:nth-child(4){transition-delay:.4s}
+::selection{background:#FDB927;color:#552583}
+@media(max-width:991px){.nav-brand-link{width:180px!important;max-width:48vw!important}}
+@media(prefers-reduced-motion:reduce){.hezi-signature-animated path{stroke-dashoffset:0!important;transition:none!important}}
+.marquee-gl-rive-target .hezi-signature-animated{opacity:0}
+/* Recolor the original Rive UI artwork, preserving its state machines/timing. */
+canvas[data-rive-object],canvas[data-rive-nav-hamburger]{filter:hue-rotate(-32deg) saturate(.95)}
+.hezi-wordmark{color:inherit!important}

@@ -1,0 +1,28 @@
+#H05{background:#21112f;color:#fff9ed;isolation:isolate;overflow:hidden}
+#H05 .otot-home-text-w h2{font-size:clamp(42px,6.2vw,96px);line-height:.96;color:#fdb927}
+#H05 .otot-home-text-w h2+ h2{font-size:clamp(36px,5vw,76px);color:#fff9ed}
+#H05 .otot-home-p-w{max-width:17rem;color:#e6dcec}
+#H05 .otot-home-layout{gap:3rem;position:relative;z-index:2}
+#H05 .otot-home-img-w{height:85vh;width:44vw;aspect-ratio:auto;max-width:none;mix-blend-mode:lighten;mask-image:linear-gradient(to bottom,#000 78%,transparent 100%)}
+#H05 .otot-home-img-w.is-1{left:-14vw;bottom:0}
+#H05 .otot-home-img-w.is-2{right:-14vw;bottom:0}
+#H05 .otot-home-img{object-fit:cover;object-position:50% 30%;filter:grayscale(1);transition:filter .8s cubic-bezier(.22,1,.36,1)}
+#H05 .otot-home-img-w.is-2 img{object-position:35% 25%}
+#H05 .otot-home-img-w:hover img{filter:grayscale(1) brightness(1.12)}
+#H05 .otot-home-p-w p{font-family:"PingFang SC",sans-serif;line-height:1.7;font-size:15px}
+@media(max-width:767px){
+ #H05 .otot-home-inner{padding-top:7.5rem;min-height:100svh}
+ #H05 .otot-home-layout{gap:1.4rem;padding:0 1rem}
+ #H05 .otot-home-text-w h2{font-size:12vw}
+ #H05 .otot-home-text-w h2+h2{font-size:7.8vw}
+ #H05 .otot-home-p-w p{font-size:12px}
+ #H05 .otot-home-img-w{width:77vw;height:58vh}
+ #H05 .otot-home-img-w.is-1{left:-30vw}
+ #H05 .otot-home-img-w.is-2{right:-30vw}
+}
+
+#H05 .otot-home-bg{mix-blend-mode:lighten}
+#H05 .otot-home-img-w{mix-blend-mode:normal}
+#H05 .otot-home-img{width:100%!important;height:100%!important;max-width:none!important}
+
+#H05 img.otot-home-img{position:absolute;inset:0;display:block;width:100%!important;height:100%!important}

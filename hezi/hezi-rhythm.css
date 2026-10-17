@@ -1,0 +1,67 @@
+/* Full-bleed liquid loading surface; canvas remains the original lifecycle driver. */
+.transition-w{width:100%!important;inset:0!important;background:transparent!important;overflow:hidden}
+.transition-rive{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;background:transparent!important}
+.hezi-loader-backdrop{position:absolute;inset:-2% -1%;width:102%;height:106%;overflow:visible;transition:transform .48s cubic-bezier(.76,0,.24,1);will-change:transform}
+.hezi-loader-mark{transition:opacity .22s ease,transform .48s cubic-bezier(.76,0,.24,1)}
+.hezi-leaving .hezi-loader-backdrop{transform:translateY(-110%)}
+.hezi-leaving .hezi-loader-mark{opacity:0;transform:translateY(-15vh)}
+/* Match visible head size and eye height, not the dimensions of the source canvas. */
+#H05 .otot-home-img-w.is-1{width:53vh;height:53vh;left:-9vh;bottom:16vh}
+#H05 .otot-home-img-w.is-1 img{object-fit:contain;object-position:center}
+/* Arrival, hold, then a three-line release. */
+#H03{min-height:100vh;height:100vh;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;padding:70px 0 32px}
+#H03>.c{width:100%;padding-top:0;padding-bottom:0}
+#H03 .impact-content-w.is-home{padding:0;gap:2.5vh}
+#H03 .hezi-quote-row{overflow:hidden;padding:0 .12em}
+#H03 .hezi-quote-line{will-change:transform,opacity}
+#H03 .hezi-quote-source{margin:4vh auto 0;flex:none}
+#H03 .text-impact-lg-mona{font-size:clamp(48px,8vw,124px)}
+/* Photos use native proportions. The original horizontal track and scrub remain. */
+#H04 .horizontal-track{gap:8vh;padding-top:10vh;padding-bottom:8vh}
+#H04 .horizontal-grid-spacer{display:none}
+#H04 .horizontal-grid-col{justify-content:space-between;gap:5vh;min-width:max-content;margin:0}
+#H04 .horizontal-item-w{left:auto;right:auto;margin:0;flex:none;width:auto}
+#H04 .horizontal-item-layout{width:auto;gap:1.5vh}
+#H04 .horizontal-item-img-w{height:auto!important;aspect-ratio:auto!important;overflow:visible!important;display:block}
+#H04 .image.is-horizontal-scroll{width:100%!important;height:auto!important;max-width:none;object-fit:contain;display:block}
+#H04 .horizontal-item-img-w.is-home-1{width:35vh}
+#H04 .horizontal-item-img-w.is-home-2{width:21vh;margin-left:10vh}
+#H04 .horizontal-item-img-w.is-home3{width:32vh}
+#H04 .horizontal-item-img-w.is-home-4{width:28vh}
+#H04 .horizontal-item-img-w.is-home-5{width:40vh}
+#H04 .horizontal-item-img-w.is-home-6{width:38vh;margin-top:30vh}
+#H04 .horizontal-item-img-w.is-home-7{width:46vh;margin-top:4vh}
+#H04 .horizontal-item-img-w.is-home8{width:30vh}
+#H04 .horizontal-item-img-w.is-home10{width:25vh}
+#H04 .horizontal-item-img-w.is-home9{width:35vh}
+#H04 .horizontal-item-pill{display:none}
+#H04 .is-home-callout-2{max-width:30vh}
+/* Show the entire closing photograph before its restrained exit parallax. */
+#H06 .otot-home-end-img-w{height:100vh;min-height:100vh;align-items:center;background:#21112f}
+#H06 img.is-otot-home-end{position:relative!important;inset:auto!important;width:100%!important;height:100%!important;object-fit:contain;object-position:center;transform-origin:center}
+@media(max-width:991px){
+ #H04 .horizontal-track{display:grid;grid-template-columns:1fr 1fr;gap:9vw 5vw;padding:12vw 6vw;height:auto}
+ #H04 .horizontal-grid-col{display:contents}
+ #H04 .horizontal-item-w{width:100%;min-width:0;align-self:center}
+ #H04 .horizontal-item-w:nth-child(even){margin-top:14vw}
+ #H04 .horizontal-item-img-w{width:100%!important;margin:0!important}
+ #H04 .image.is-horizontal-scroll{transform:none!important;left:0!important}
+ #H04 .horizontal-item-layout{width:100%}
+ #H04 .horizontal-item-w.is-home3,#H04 .horizontal-item-w.is-home-7{grid-column:span 2;width:82%;justify-self:center}
+ #H04 .horizontal-item-w.is-home3{width:56%}
+ #H04 .horizontal-item-text{font-size:15px;line-height:1.45}
+ #H04 .is-text-callout{max-width:100%!important}
+ #H05 .otot-home-img-w.is-1{width:48vh;height:48vh;left:-20vh;bottom:3vh}
+ #H03{padding-top:90px}
+ #H03 .text-impact-lg-mona{font-size:10.6vw;line-height:1.18}
+ #H06 .otot-home-end-img-w{height:75svh;min-height:75svh}
+}
+@media(prefers-reduced-motion:reduce){.hezi-loader-backdrop,.hezi-loader-mark{transition:none}}
+
+#H03 .hezi-quote-line.c-lime{color:#fdb927!important}
+#H04 .eyebrow-w,#H04 .text-eyebrow,#H04 .horizontal-item-text{color:#552583!important}
+@media(min-width:992px){
+ #H05 .otot-home-img-w.is-1{width:55vh;height:55vh;left:-10vh;bottom:15.5vh}
+ #H05 .otot-home-img-w.is-2{width:71.5vh;height:75vh;right:-21vh;bottom:6.5vh}
+ #H05 .otot-home-img-w.is-2 img{object-fit:contain;object-position:center}
+}

@@ -1,0 +1,21 @@
+/* Live text keeps every spirit strip readable and editable. */
+.hezi-spirit-word {
+  display: inline-block;
+  flex: none;
+  white-space: nowrap;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(1.25rem, 2.6vw, 2.625rem);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: .06em;
+}
+.hezi-spirit-word-home { font-size: clamp(1.75rem, 3.4vw, 3.4375rem); color: #552583; }
+.hezi-spirit-star { margin-left: 2rem; font-size: 1.25rem; }
+.hezi-spirit-manifesto { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #552583; padding: 3rem 1rem; }
+.hezi-spirit-kicker { font: 700 .85rem/1.5 sans-serif; letter-spacing: .2em; }
+.hezi-spirit-manifesto p { margin: 1.5rem 0 0; font-family: "PingFang SC", "Microsoft YaHei", sans-serif; font-size: clamp(2.5rem, 7vw, 7rem); font-weight: 900; line-height: 1.2; letter-spacing: -.04em; }
+.hezi-spirit-manifesto p span { display: block; }
+.text-impact-sm-mona.footer { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; }
+.text-impact-sm-mona.footer span { font-family: inherit; }
+@media (max-width: 600px) { .hezi-spirit-star { margin-left: 1rem; } }
+.home-collab-rive-w.hezi-spirit-manifesto { position: relative; inset: auto; z-index: 0; width: 100%; height: auto; margin: 4rem 0 0; }

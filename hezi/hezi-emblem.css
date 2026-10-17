@@ -1,0 +1,20 @@
+.hezi-emblem{display:block;width:100%;height:100%;overflow:visible}
+.page-ln4-svg{width:42px!important;height:42px!important;color:var(--hezi-emblem-ink,#552583)}
+.home-hero-logo-wrap>.hezi-emblem{max-width:72px;margin:auto;color:#FDB927}
+.transition-rive{position:relative;background:#552583}
+.transition-rive>canvas[data-rive-primary]{opacity:0!important}
+.hezi-loader-mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;color:#FDB927;pointer-events:none}
+.hezi-loader-mark .hezi-emblem{width:150px;height:130px}
+.hezi-loader-mark span{font:600 12px Arial,sans-serif;letter-spacing:.45em;padding-left:.45em}
+#H03 .text-impact{font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+.hezi-quote-source{display:block;text-align:center;position:relative;color:inherit;opacity:.7;font-size:12px;letter-spacing:.04em;margin:-2rem auto 4rem;text-decoration:none}
+.hezi-photo-credits{font-size:11px;letter-spacing:.03em;color:inherit;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:767px){.page-ln4-svg{width:34px!important;height:34px!important}.hezi-quote-source{font-size:10px;max-width:85%;margin:0 auto 2rem}}
+@media(prefers-reduced-motion:reduce){.hezi-emblem *{animation:none!important}}
+.hezi-impact-symbol{width:100px;height:80px;color:#FDB927;margin:0 auto 1rem}
+
+@font-face{font-family:Hezi Display;src:url('/hezi-site/hezi/fonts/hezi-slogan.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+#H03 .text-impact-lg-mona{font-family:"Hezi Display","PingFang SC",sans-serif;font-weight:400;font-size:clamp(50px,8.5vw,138px);line-height:1.06;letter-spacing:.015em;transform:skewX(-8deg);text-wrap:nowrap;-webkit-font-smoothing:antialiased}
+@media(max-width:767px){#H03 .text-impact-lg-mona{font-size:clamp(32px,9.1vw,65px);line-height:1.16;letter-spacing:0}}
+
+#H03 .text-impact-lg-mona *{font-family:inherit;font-weight:inherit}
