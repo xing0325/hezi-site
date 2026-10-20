@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/hezi-site/fcc/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      -webkit-user-drag: none;
+      -moz-user-drag: none;
+      -ms-user-drag: none;
+      user-drag: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .inview-init {
+      opacity: 0;
+      transform: translateY(80rem);
+    }
+
+    :root {
+      --animate-duration: 500ms;
+    }
+
+    /* 自定义从下方淡入淡出动画 */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(80rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn var(--animate-duration) ease-out forwards;
+      will-change: opacity, transform;
+    }
+
+    /* 全局性能优化 */
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* 使用 GPU 加速 - 所有动画元素 */
+    .fade-in,
+    .inview-init {
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      will-change: opacity, transform;
+    }
+    
+    /* 优化滚动性能 */
+    html {
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    
+    /* 优化移动端滚动性能 */
+    @media (max-width: 600px) {
+      /* 使用 GPU 加速 */
+      .fade-in,
+      .inview-init {
+        perspective: 1000px;
+      }
+      
+      /* 优化滚动容器 */
+      * {
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+    @media (min-width: 601px) {
+      #tutor, #cases, #about, #special, #product, #team, #service, #strategy, #faq, #touch { scroll-margin-top: 70rem; }
+    }
+    @media (max-width: 600px) {
+      #tutor, #cases, #about, #special, #product, #team, #service, #strategy, #faq, #touch { scroll-margin-top: 57rem; }
+    }
+  </style>
+  <title>FCC Official Website</title>
+  <script type="module" crossorigin src="/hezi-site/fcc/assets/index-8gdVOCPl.js"></script>
+  <link rel="stylesheet" crossorigin href="/hezi-site/fcc/assets/index-CqRxNvwx.css">
+<link rel="stylesheet" href="/hezi-site/fcc/updates.css">
+</head>
+
+<body>
+  <div id="app"></div>
+
+</body>
+
+</html>

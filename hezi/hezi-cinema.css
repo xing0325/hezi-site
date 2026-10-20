@@ -5,3 +5,11 @@
 @media(prefers-reduced-motion:reduce){.hz-tiktok-icon,.tv-eq i{animation:none}.tv-episode,.tv-controls{transition:none}}
 
 .hz-cinema .tv-theater{position:fixed;inset:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:0;border:0;background:#100819;color:#fff8e8}.hz-cinema .tv-theater::backdrop{background:#100819}.hz-cinema .tv-theater .tv-player{width:100%;height:100%;max-height:none;min-height:0;border-radius:0}
+
+/* Native portrait canvas: the video determines the viewing frame. */
+.hz-cinema .tv-layout{grid-template-columns:minmax(0,410px) minmax(260px,350px);justify-content:center;gap:clamp(28px,6vw,90px)}
+.hz-cinema .tv-player{width:100%;height:auto;min-height:0;max-height:none;aspect-ratio:9/16}
+.hz-cinema .tv-player video{object-fit:cover}.hz-cinema .tv-ambient{display:none}
+.hz-cinema .tv-volume{display:none}.hz-cinema .tv-control-row{gap:4px}.hz-cinema .tv-controls{padding:48px 10px 10px}.hz-cinema .tv-control{width:30px}.hz-cinema .tv-clock{font-size:10px}
+.hz-cinema .tv-player:fullscreen,.hz-cinema .tv-theater .tv-player{height:100%;width:100%;aspect-ratio:auto}.hz-cinema .tv-player:fullscreen video,.hz-cinema .tv-theater video{object-fit:contain}
+@media(max-width:767px){.hz-cinema .tv-layout{grid-template-columns:minmax(0,410px);gap:18px}.hz-cinema .tv-player-col{width:100%}.hz-cinema .tv-episodes{max-width:100%;min-width:0}}
