@@ -1,0 +1,15 @@
+{
+  "source": "https://www.funshinecareerconsulting.com/",
+  "assetOrigin": "https://fcc-1258418671.cos.ap-chengdu.myqcloud.com/",
+  "files": {
+    "fcc-about3.webp": "about3.webp",
+    "fcc-about4.webp": "about4.png",
+    "fcc-about1.webp": "about1.png",
+    "fcc-strategy3.webp": "strategy3.png",
+    "fcc-about2.webp": "about2.png",
+    "fcc-strategy2.webp": "strategy2.png",
+    "fcc-strategy4.webp": "strategy4.png",
+    "fcc-touch1.webp": "touch1.webp"
+  },
+  "note": "Original FCC images; resized and encoded as WebP for local layout preview."
+}
