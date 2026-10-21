@@ -42759,6 +42759,7 @@ function heziQuoteBeat() {
  if(!section||!lines?.length)return;
  TA.getAll().filter(t=>t.vars.id==='hezi-quote-beat').forEach(t=>t.kill());
  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){m.set(lines,{autoAlpha:1,yPercent:0});return;}
+ if(window.innerWidth<=991){m.fromTo(lines,{yPercent:45,autoAlpha:0},{yPercent:0,autoAlpha:1,duration:.65,stagger:.12,ease:'power3.out',scrollTrigger:{id:'hezi-quote-beat',trigger:section,start:'top 72%',once:true}});return;}
  const beat=m.timeline();
  beat.to({}, {duration:.26});
  beat.fromTo(lines,{yPercent:115,autoAlpha:0},{yPercent:0,autoAlpha:1,duration:.45,stagger:.14,ease:'power3.out'});
@@ -44888,7 +44889,7 @@ function $_() {
     console.warn("Eyebrow elements not found within description elements");
     return
   }
-  w0.button = A, A.setAttribute("aria-label", "Disable smooth scrolling and scroll to top"), A.setAttribute("aria-pressed", "false"), A.setAttribute("role", "switch"), A.setAttribute("data-scroll-disabled", "false"), Q.style.display = "flex", B.style.display = "none", m.set(C, {
+  w0.button = A, A.setAttribute("aria-label", "锁定页面，滑动查看人物"), A.setAttribute("aria-pressed", "false"), A.setAttribute("data-scroll-disabled", "false"), Q.style.display = "flex", B.style.display = "none", m.set(C, {
     y: "0%"
   }), m.set(K, {
     y: "100%"
@@ -44898,7 +44899,7 @@ function $_() {
       if (window.lenis && typeof window.lenis.scrollTo === "function") window.lenis.scrollTo(0, {
         duration: 0
       });
-      w0.isScrollDisabled = !0, A.setAttribute("aria-pressed", "true"), A.setAttribute("aria-label", "Enable smooth scrolling"), A.setAttribute("data-scroll-disabled", "true"), Q.style.display = "none", B.style.display = "flex", m.to(C, {
+      w0.isScrollDisabled = !0, A.setAttribute("aria-pressed", "true"), A.setAttribute("aria-label", "恢复页面滚动"), A.setAttribute("data-scroll-disabled", "true"), Q.style.display = "none", B.style.display = "flex", m.to(C, {
         y: "100%",
         duration: 0.3,
         ease: "power2.out"
@@ -44909,7 +44910,7 @@ function $_() {
       })
     } else {
       if (typeof window.lenisStart === "function") window.lenisStart();
-      w0.isScrollDisabled = !1, A.setAttribute("aria-pressed", "false"), A.setAttribute("aria-label", "Disable smooth scrolling and scroll to top"), A.setAttribute("data-scroll-disabled", "false"), Q.style.display = "block", B.style.display = "none", m.to(K, {
+      w0.isScrollDisabled = !1, A.setAttribute("aria-pressed", "false"), A.setAttribute("aria-label", "锁定页面，滑动查看人物"), A.setAttribute("data-scroll-disabled", "false"), Q.style.display = "block", B.style.display = "none", m.to(K, {
         y: "100%",
         duration: 0.3,
         ease: "power2.out"
